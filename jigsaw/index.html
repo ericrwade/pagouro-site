@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jigsaw by Pagouro</title>
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<meta name="description" content="A quiet, free jigsaw puzzle game of Belle Époque pictures for Android. No ads, nothing to buy, nothing locked, no data collected.">
+<!-- pagouro.com/jigsaw: the page the game's Share text points to. Same look as the front page: one static file,
+     no scripts, no fonts fetched, no analytics. Copy follows store/PLAY_STORE.md in ericrwade/pagouro-play. -->
+<style>
+  :root { --ink:#1b1a17; --paper:#f6f1e7; --rule:#c9b99a; --accent:#8a3b1c; --dim:#5f5a50; }
+  * { box-sizing:border-box }
+  body { margin:0; background:var(--paper); color:var(--ink); font:18px/1.55 Georgia, "Times New Roman", serif; }
+  main { max-width:44rem; margin:0 auto; padding:2rem 1.25rem 4rem; }
+  .back { font-size:.95rem; color:var(--dim) }
+  .banner { width:100%; height:auto; display:block; margin:1rem 0 1.25rem; border:1px solid var(--rule) }
+  h1 { font-size:2.4rem; margin:0; letter-spacing:.01em }
+  .tag { color:var(--dim); margin:.25rem 0 1.25rem; font-style:italic }
+  .status { border:1px solid var(--rule); background:#fffdf8; padding:.9rem 1.1rem; margin:1.25rem 0 }
+  .shots { display:grid; grid-template-columns:repeat(3, 1fr); gap:.75rem; margin:1.5rem 0 }
+  .shots figure { margin:0 }
+  .shots img { width:100%; height:auto; display:block; border:1px solid var(--rule) }
+  .shots figcaption { color:var(--dim); font-size:.85rem; margin-top:.35rem; text-align:center }
+  h2 { font-size:1.15rem; text-transform:uppercase; letter-spacing:.12em; color:var(--dim); margin:2.2rem 0 .6rem }
+  ul { padding-left:1.2rem } li { margin:.45rem 0 }
+  pre { font:.95rem/1.45 ui-monospace, Consolas, monospace; background:#efe7d6; padding:.75rem 1rem; border-radius:3px; white-space:pre-wrap }
+  a { color:var(--accent) }
+  footer { margin-top:3rem; border-top:1px solid var(--rule); padding-top:1rem; color:var(--dim); font-size:.95rem }
+  @media (max-width:520px){ .shots{grid-template-columns:1fr 1fr} .shots figure:last-child{display:none} h1{font-size:2rem} }
+</style>
+</head>
+<body>
+<main>
+  <a class="back" href="/">← Pagouro</a>
+  <img class="banner" src="jigsaw_banner.jpg" alt="Jigsaw by Pagouro: a Belle Époque poster picture with puzzle pieces">
+  <h1>Jigsaw by Pagouro</h1>
+  <p class="tag">Relaxing Belle Époque jigsaws. No ads, nothing to buy, nothing locked.</p>
+
+  <p>A quiet, free jigsaw puzzle game of Belle Époque posters: poplars at sunset, the Eiffel Tower in spring, irises in
+  a tall vase, balloons over Paris rooftops, a black cat on a red cushion. A hundred and sixty pictures, every one drawn
+  by our own AI picture model.</p>
+
+  <p class="status"><b>Android, in testing on Google Play now.</b> The public release follows the test. This page will
+  carry the Play Store link the day it does.</p>
+
+  <div class="shots">
+    <figure><img src="phone_2.jpg" alt="A puzzle of purple irises half done, with loose pieces in the tray along the bottom" loading="lazy"><figcaption>The tray: swipe a piece up</figcaption></figure>
+    <figure><img src="phone_4.jpg" alt="The finished Eiffel Tower picture with a card reading Finished in 21:37" loading="lazy"><figcaption>Finished</figcaption></figure>
+    <figure><img src="phone_3.jpg" alt="The Help card, a short note about the pictures shown before a hint" loading="lazy"><figcaption>Help, without ads</figcaption></figure>
+  </div>
+
+  <h2>Free, and nothing else</h2>
+  <ul>
+    <li>No ads at all, ever. Nothing to buy, no coins, no subscription, nothing locked: all 160 pictures are free from the first day.</li>
+    <li>No account, and the app collects no data (<a href="/jigsaw-privacy.html">privacy policy</a>). It works fully offline and asks for no permissions.</li>
+  </ul>
+
+  <h2>The puzzles</h2>
+  <ul>
+    <li><b>A daily puzzle:</b> the same picture for everyone each day, at the size you like.</li>
+    <li>Any of the 160 pictures at 12, 25, 49, 100 or 156 pieces.</li>
+    <li>Two cuts: Whimsical (waving edges, bulbs, caps and arrowheads) or Classic (a traditional die-cut look).</li>
+    <li>Optional rotation for experts: pieces start turned; tap to turn.</li>
+    <li>A gentle 62-minute piano loop in the style of the Paris salon, by Pagouro Salon, our small AI music generator trained only on public-domain scores.</li>
+  </ul>
+
+  <h2>Share your time</h2>
+  <p>Finish the daily and tap Share to copy your result for the family chat, like this:</p>
+  <pre>Jigsaw by Pagouro #279 🧩
+49 pieces in 6:12
+pagouro.com</pre>
+  <p>The number is the day's puzzle, so everyone posting the same number did the same picture. It never names the
+  picture, so nobody's puzzle gets spoiled.</p>
+
+  <h2>About the AI pictures</h2>
+  <p>We want to be plain about this. The pictures were drawn by Pagouro BE, our own AI picture generator. It learned its
+  Belle Époque style from public-domain posters made before 1929, each listed with its source in a public
+  <a href="https://huggingface.co/Pagouro/pagouro-be-1.0">ledger</a>, on top of an open base model trained on Creative
+  Commons-licensed images. Its sources, including the parts we did not train ourselves, are documented on the
+  <a href="/">front page</a> and in <a href="https://github.com/ericrwade/pagouro-be">its repository</a>. The 160
+  pictures in the game were picked by hand from more than 1,400 drawings.</p>
+
+  <h2>Open</h2>
+  <p>Every picture and the music are CC0: yours to keep. The game's code is Apache 2.0 and public:
+  <a href="https://github.com/ericrwade/pagouro-play">github.com/ericrwade/pagouro-play</a>. Built with
+  <a href="https://godotengine.org">Godot</a>, with thanks to <a href="https://summerengine.com">Summer Engine</a>, the AI
+  game engine that got us making games.</p>
+
+  <footer>
+    Made by Pagouro, a small project building free, open AI that runs on your own computer. Eric Wade, with Claude
+    (Anthropic). Questions: <a href="mailto:info@pagouro.com">info@pagouro.com</a>. This page is a static file; it loads
+    nothing from anywhere else.
+  </footer>
+</main>
+</body>
+</html>
