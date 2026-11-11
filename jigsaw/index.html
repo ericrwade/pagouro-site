@@ -7,7 +7,7 @@
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<meta name="description" content="A quiet, free jigsaw puzzle game of Belle Époque pictures for Android. No ads, nothing to buy, nothing locked, no data collected.">
+<meta name="description" content="A quiet, free jigsaw puzzle game of Belle Époque pictures for Android, iPhone and iPad. No ads, nothing to buy, nothing locked, no data collected.">
 <!-- Link previews: the game's Share text carries this address, so chat apps show this card (the app icon and name),
      never a puzzle picture a player could take for the one they just did (Eric's mom, 2026-10-06). -->
 <meta property="og:type" content="website">
@@ -31,6 +31,11 @@
   h1 { font-size:2.4rem; margin:0; letter-spacing:.01em }
   .tag { color:var(--dim); margin:.25rem 0 1.25rem; font-style:italic }
   .status { border:1px solid var(--rule); background:#fffdf8; padding:.9rem 1.1rem; margin:1.25rem 0 }
+  .stores { display:flex; flex-wrap:wrap; gap:.75rem; margin:1.25rem 0 }
+  .stores a { display:inline-block; padding:.7rem 1.2rem; background:var(--ink); color:var(--paper); text-decoration:none;
+              border-radius:6px; font-size:1rem; line-height:1.25 }
+  .stores a small { display:block; font-size:.75rem; opacity:.8 }
+  .stores a:hover, .stores a:focus { background:var(--accent) }
   .shots { display:grid; grid-template-columns:repeat(3, 1fr); gap:.75rem; margin:1.5rem 0 }
   .shots figure { margin:0 }
   .shots img { width:100%; height:auto; display:block; border:1px solid var(--rule) }
@@ -51,11 +56,13 @@
   <p class="tag">Relaxing Belle Époque jigsaws. No ads, nothing to buy, nothing locked.</p>
 
   <p>A quiet, free jigsaw puzzle game of Belle Époque posters: poplars at sunset, the Eiffel Tower in spring, irises in
-  a tall vase, balloons over Paris rooftops, a black cat on a red cushion. A hundred and sixty pictures, every one drawn
+  a tall vase, balloons over Paris rooftops, a black cat on a red cushion. Three hundred and eighty-two pictures, every one drawn
   by our own AI picture model.</p>
 
-  <p class="status"><b>Android, in testing on Google Play now.</b> The public release follows the test. This page will
-  carry the Play Store link the day it does.</p>
+  <p class="stores">
+    <a href="https://apps.apple.com/app/id6820855876"><small>Download on the</small>App Store</a>
+    <a href="https://play.google.com/store/apps/details?id=com.pagouro.jigsaw"><small>Get it on</small>Google Play</a>
+  </p>
 
   <div class="shots">
     <figure><img src="phone_2.jpg" alt="A puzzle of purple irises half done, with loose pieces in the tray along the bottom" loading="lazy"><figcaption>The tray: swipe a piece up</figcaption></figure>
@@ -65,14 +72,14 @@
 
   <h2>Free, and nothing else</h2>
   <ul>
-    <li>No ads at all, ever. Nothing to buy, no coins, no subscription, nothing locked: all 160 pictures are free from the first day.</li>
+    <li>No ads at all, ever. Nothing to buy, no coins, no subscription, nothing locked: all 382 pictures are free from the first day.</li>
     <li>No account, and the app collects no data (<a href="/jigsaw-privacy.html">privacy policy</a>). It works fully offline and asks for no permissions.</li>
   </ul>
 
   <h2>The puzzles</h2>
   <ul>
     <li><b>A daily puzzle:</b> the same picture for everyone each day, at the size you like.</li>
-    <li>Any of the 160 pictures at 12, 25, 49, 100 or 156 pieces.</li>
+    <li>Any of the 382 pictures at 12, 25, 49, 100 or 156 pieces.</li>
     <li>Two cuts: Whimsical (waving edges, bulbs, caps and arrowheads) or Classic (a traditional die-cut look).</li>
     <li>Optional rotation for experts: pieces start turned; tap to turn.</li>
     <li>A gentle 62-minute piano loop in the style of the Paris salon, by Pagouro Salon, our small AI music generator trained only on public-domain scores.</li>
@@ -91,8 +98,8 @@ pagouro.com</pre>
   Belle Époque style from public-domain posters made before 1929, each listed with its source in a public
   <a href="https://huggingface.co/Pagouro/pagouro-be-1.0">ledger</a>, on top of an open base model trained on Creative
   Commons-licensed images. Its sources, including the parts we did not train ourselves, are documented on the
-  <a href="/">front page</a> and in <a href="https://github.com/ericrwade/pagouro-be">its repository</a>. The 160
-  pictures in the game were picked by hand from more than 1,400 drawings.</p>
+  <a href="/">front page</a> and in <a href="https://github.com/ericrwade/pagouro-be">its repository</a>. The 382
+  pictures in the game were chosen from more than 4,400 drawings: an automated check first, then a look at every one.</p>
 
   <h2>Open</h2>
   <p>Every picture and the music are CC0: yours to keep. The game's code is Apache 2.0 and public:
